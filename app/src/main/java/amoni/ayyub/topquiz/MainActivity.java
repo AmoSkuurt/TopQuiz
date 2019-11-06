@@ -11,10 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    /**
-     * Création des champs (attributs) requis
-     */
 
+    //Déclaration des champs (attributs) requis
     private TextView mWelcomeText;
     private EditText mNameInput;
     private Button mButton;
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //Désactiver le bouton de l'interface
         mButton.setEnabled(false);
 
-        //Notifié lorsque l'utilisateur commence à saisir du texte dans le champ EditText
+        //Notifie lorsque l'utilisateur commence à saisir du texte dans le champ EditText
         mNameInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
