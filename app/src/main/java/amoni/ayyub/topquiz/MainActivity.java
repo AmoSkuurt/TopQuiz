@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mButton.setEnabled(s.toString().length() != 3);
+                mButton.setEnabled(s.toString().length() >= 4);
             }
 
             @Override
