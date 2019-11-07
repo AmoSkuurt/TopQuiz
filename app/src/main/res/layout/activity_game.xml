@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context="GameActivity">
+tools:context=".controller.GameActivity">
 
     <TextView
         android:id="@+id/activity_game_question_txt"
@@ -30,8 +30,8 @@ tools:context="GameActivity">
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:textColor="@android:color/holo_red_dark"
-
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:text="@string/answer1"/>
 
@@ -41,7 +41,8 @@ tools:context="GameActivity">
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:text="@string/answer2"/>
 
@@ -51,7 +52,8 @@ tools:context="GameActivity">
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:text="@string/answer3"/>
 
@@ -61,7 +63,8 @@ tools:context="GameActivity">
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:text="@string/answer4"/>
 
