@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import amoni.ayyub.topquiz.R;
+import amoni.ayyub.topquiz.model.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mWelcomeText;
     private EditText mNameInput;
     private Button mButton;
+    private User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mWelcomeText = findViewById(R.id.activity_main_welcome_txt);
         mNameInput = findViewById(R.id.activity_main_txt_input);
         mButton = findViewById(R.id.activity_main_play_btn);
+        mUser = new User();
 
         //Désactiver le bouton de l'interface
         mButton.setEnabled(false);
@@ -57,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
                 startActivity(gameActivity);
+                //Mémorisez le prénom du joueur lorsqu'il clique sur le bouton
+                mUser.setFirstname(mNameInput.getText().toString());
             }
         });
     }
